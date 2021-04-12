@@ -1,0 +1,29 @@
+{
+	"name": "@rbxts/llama",
+	"version": "1.1.0-ts1",
+	"description": "Lua Library for Immutable Data (Llama) by Frelerik",
+	"main": "out/init.lua",
+	"scripts": {
+		"prepublishOnly": "rbxtsc"
+	},
+	"keywords": [
+		"roblox-ts",
+		"roblox",
+		"immutable"
+	],
+	"author": "tacheometry",
+	"license": "MIT",
+	"types": "out/index.d.ts",
+	"files": [
+		"out"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "^1.1.1-types.0",
+		"@rbxts/types": "^1.0.469"
+	},
+	"homepage": "https://frelerik.github.io/llama/",
+	"repository": "github:tacheometry/rbxts-llama"
+}
