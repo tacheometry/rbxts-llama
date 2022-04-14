@@ -3,10 +3,10 @@
 Lua Library for Immutable Data
 </div>
 
-TS typings for Frelerik's "Llama" library. Some useful links:
+TS typings for freddylist's "Llama" library. Some useful links:
 
--   **[Llama repository](https://github.com/Frelerik/llama/)**
--   **[Llama documentation](https://frelerik.github.io/llama/)**
+-   **[Llama's repository](https://github.com/freddylist/llama/)**
+-   **[Llama's documentation](https://freddylist.github.io/llama/)**
 -   **[This package's repository](https://github.com/tacheometry/rbxts-llama/)**
 
 <h2>Installation</h2>
@@ -17,7 +17,7 @@ Run `npm i @rbxts/llama` in your project directory.
 
 <h2>Usage</h2>
 
-After importing the library, you can use any utility from [the documentation](https://frelerik.github.io/llama/) in TS.
+After importing the library, you can use any utility from [the documentation](https://freddylist.github.io/llama/) in TS.
 
 <h3>Llama data types for TS</h3>
 
@@ -41,4 +41,4 @@ import { Dictionary, List, Set } from "@rbxts/llama";
 
 ---
 
-If you would like to contribute to Llama, please file Pull Requests and Issues in [its GitHub repository](https://github.com/Frelerik/llama/), and not in the repository of this package.
+If you would like to contribute to Llama, please file Pull Requests and Issues in [its GitHub repository](https://github.com/freddylist/llama/), and not in the repository of this package.
