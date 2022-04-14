@@ -192,7 +192,7 @@ declare namespace Dictionary {
 	 */
 	function removeValues<D extends object, V extends D[keyof D][]>(
 		dictionary: D,
-		...value: V
+		...values: V
 	): ExcludeMembers<D, V[keyof V]>;
 
 	/**
@@ -202,10 +202,9 @@ declare namespace Dictionary {
 		dictionary: D,
 		key: K,
 		value: V
-	): D &
-		{
-			[key in K]: V;
-		};
+	): D & {
+		[key in K]: V;
+	};
 
 	/**
 	 * Returns a new dictionary with the entry at `key` is updated by `updater`. If the entry does not exist, `callback` is invoked and the entry is created from its return value.
@@ -752,6 +751,14 @@ declare namespace List {
 		list: L,
 		value: V
 	): Exclude<L, V>[];
+
+	/**
+	 * Returns a new list with all entries of `list` with any `values` removed.
+	 */
+	function removeValues<L extends AnyList, V extends L[keyof L][]>(
+		list: L,
+		...values: V
+	): ExcludeMembers<L, V[keyof V]>;
 
 	/**
 	 * Returns a new list with `index` in `list` set to the `value`. If `index` is 0 or negative, `set` sets at `index` relative to the end of `list`.
@@ -1315,6 +1322,8 @@ declare namespace LlamaSet {
 	 * ```
 	 */
 	function fromList<Lt>(list: Lt[]): Set<Lt>;
+
+	function toList<V>(set: Set<V>): V[];
 
 	/* Copying */
 	/**
